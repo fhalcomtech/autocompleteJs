@@ -2,6 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
+   
+   
+/* CSS HSL */
+--rich-black-fogra-39: hsla(330, 10%, 4%, 1);
+--eerie-black: hsla(206, 14%, 10%, 1);
+--blood-red: hsla(359, 87%, 21%, 1);
+--ruby-red: hsla(358, 76%, 36%, 1);
+--carnelian: hsla(359, 77%, 41%, 1);
+--imperial-red: hsla(359, 77%, 56%, 1);
+--silver-chalice: hsla(5, 7%, 67%, 1);
+--light-gray: hsla(0, 0%, 83%, 1);
+--cultured: hsla(330, 9%, 96%, 1);
+--white: hsla(0, 0%, 100%, 1);
+   
+
+
 }
 
 .container
@@ -9,7 +26,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:#F7B801;
+    background-color:var(--silver-chalice);
     min-width: 100vw;
     min-height: 100vh;
     
@@ -19,30 +36,28 @@
 {
     width: 30vw;
     height: 90vh;
-    
-  
-  
     border-radius: 15px;
-    box-shadow: 5px 10px 10px -10px rgba(0, 0, 15, 25%) ;
+    background-color: var(--eerie-black);
+    box-shadow: 5px 10px 8px -10px var(--ruby-red);
     position: relative;
-}
-
-.container>div:nth-child(1){
-    background-color:#0e1534;
-}
-
-.container>div:nth-child(2)
-{
+    display: inline;
     display: flex;
-    background-color:#1b2a59;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+
+
+.container>div:nth-child(2n)
+{
+    
+    background-color: var(--rich-black-fogra-39);
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.container>div:nth-child(3)
-{
-    background-color:#0e1534;
 }
 
 .word-to-search, .word-to-add
@@ -51,24 +66,23 @@
     height: 3rem;
     border-radius: 0.5rem;
     font-size: 1.5rem;
-    background-color: #0e1534;
+    background-color:var(--silver-chalice);
     border: 0;
-    color: #F7B801;
+    color: var(--white);
     padding: 1rem;
 }
 
 .word-to-add{
     width: 60%;
     position: relative;
-    background-color:#1b2a59;
     top: 2rem;
-    left: 1rem;
+    left: 2rem;
 }
 
 .btn-add{
     display: flex;
     position: absolute;
-    background-color: #7CB243;
+    background-color: var(--eerie-black);
     width: 15%;
     height: 2rem;
     top: 2.5rem;
@@ -114,6 +128,17 @@ table > tbody > tr > td
 .match-table > tbody > tr > td
 {
     color: #f18701;
+}
+
+.new-word
+{
+    background-color: var(--ruby-red);
+    width: 100%;
+    flex: 1;
+}
+
+.dictionary-words{
+    flex: 5;
 }
 
 
