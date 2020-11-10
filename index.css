@@ -38,7 +38,7 @@
     height: 90vh;
     border-radius: 15px;
     background-color: var(--eerie-black);
-    box-shadow: 5px 10px 8px -10px var(--ruby-red);
+    box-shadow: 3px 20px 10px -15px var(--ruby-red);
     position: relative;
     display: inline;
     display: flex;
@@ -103,8 +103,14 @@ table
 {
   top:5rem;
   position: relative;
-  padding-left: 2rem;
   color: #ffffff;
+  border: var(--ruby-red) 3px solid;
+  width: 80%;
+}
+
+
+table > thead > tr{
+    background-color: var(--ruby-red);
 }
 
 table > tbody > tr {
@@ -112,7 +118,7 @@ table > tbody > tr {
     position: relative;
     background-color: #00000f;
     font-size: 1.5rem;
-    width: 20rem;
+    width: 100%;
     border-bottom: 1px #bed9a1 dashed;
 }
 
@@ -139,6 +145,9 @@ table > tbody > tr > td
 
 .dictionary-words{
     flex: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
