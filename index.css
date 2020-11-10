@@ -1,0 +1,122 @@
+*, :root, :before, :after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#F7B801;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+}
+
+.container > div
+{
+    width: 30vw;
+    height: 90vh;
+    
+  
+  
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px -10px rgba(0, 0, 15, 25%) ;
+    position: relative;
+}
+
+.container>div:nth-child(1){
+    background-color:#0e1534;
+}
+
+.container>div:nth-child(2)
+{
+    display: flex;
+    background-color:#1b2a59;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>div:nth-child(3)
+{
+    background-color:#0e1534;
+}
+
+.word-to-search, .word-to-add
+{
+    width: 80%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #0e1534;
+    border: 0;
+    color: #F7B801;
+    padding: 1rem;
+}
+
+.word-to-add{
+    width: 60%;
+    position: relative;
+    background-color:#1b2a59;
+    top: 2rem;
+    left: 1rem;
+}
+
+.btn-add{
+    display: flex;
+    position: absolute;
+    background-color: #7CB243;
+    width: 15%;
+    height: 2rem;
+    top: 2.5rem;
+    left: 70%;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.word-to-search > :nth-child(n)
+{
+    left: 1rem;
+}
+
+table
+{
+  top:5rem;
+  position: relative;
+  padding-left: 2rem;
+  color: #ffffff;
+}
+
+table > tbody > tr {
+    display: block;
+    position: relative;
+    background-color: #00000f;
+    font-size: 1.5rem;
+    width: 20rem;
+    border-bottom: 1px #bed9a1 dashed;
+}
+
+
+table > tbody > tr > td
+{
+    position: relative;
+    color: #ffffff;
+    display: inline;
+    left: 2rem;
+}
+
+.match-table > tbody > tr > td
+{
+    color: #f18701;
+}
+
+
+
+
+
